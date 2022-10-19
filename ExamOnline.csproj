@@ -1,0 +1,334 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B54EE290-5C03-4E23-A7CE-04305AC2284F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExamOnline</RootNamespace>
+    <AssemblyName>ExamOnline</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44324</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Add_Admin.aspx" />
+    <Content Include="add_Exam.aspx" />
+    <Content Include="add_question.aspx" />
+    <Content Include="add_student.aspx" />
+    <Content Include="add_Subject.aspx" />
+    <Content Include="Add_Teacher.aspx" />
+    <Content Include="admin_admin.aspx" />
+    <Content Include="ASM_files\css3menu1\arrow.gif" />
+    <Content Include="ASM_files\css3menu1\arrowsub.gif" />
+    <Content Include="ASM_files\css3menu1\mainbk.png" />
+    <Content Include="ASM_files\css3menu1\style.css" />
+    <Content Include="assets\animatecss\animate.css" />
+    <Content Include="assets\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="assets\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="assets\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\dropdown\css\style.css" />
+    <Content Include="assets\dropdown\js\navbar-dropdown.js" />
+    <Content Include="assets\images\1205526-121x121.png" />
+    <Content Include="assets\images\background7.jpg" />
+    <Content Include="assets\images\empower-every-student-60x60.png" />
+    <Content Include="assets\images\everything-you-need-ico-60x60.png" />
+    <Content Include="assets\images\make-it-simple-ico-60x60.png" />
+    <Content Include="assets\images\mbr-1900x1226.jpg" />
+    <Content Include="assets\images\pjimage-28-700x415.jpg" />
+    <Content Include="assets\images\uom-1900x655.jpg" />
+    <Content Include="assets\images\web-filtering-500x333.jpg" />
+    <Content Include="assets\mobirise\css\mbr-additional.css" />
+    <Content Include="assets\parallax\jarallax.css" />
+    <Content Include="assets\parallax\jarallax.js" />
+    <Content Include="assets\smoothscroll\smooth-scroll.js" />
+    <Content Include="assets\socicon\css\styles.css" />
+    <Content Include="assets\socicon\fonts\socicon.svg" />
+    <Content Include="assets\theme\css\style.css" />
+    <Content Include="assets\theme\js\script.js" />
+    <Content Include="assets\web\assets\mobirise-icons-bold\mobirise-icons-bold.css" />
+    <Content Include="assets\web\assets\mobirise-icons-bold\mobirise-icons-bold.svg" />
+    <Content Include="assets\web\assets\mobirise-icons2\mobirise2.css" />
+    <Content Include="assets\web\assets\mobirise-icons2\mobirise2.svg" />
+    <Content Include="assets\web\assets\mobirise-icons\mobirise-icons.css" />
+    <Content Include="assets\web\assets\mobirise-icons\mobirise-icons.svg" />
+    <Content Include="assets\ytplayer\index.js" />
+    <Content Include="edit_student.aspx" />
+    <Content Include="edit_Tech.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="Images\baner admin1.jpg" />
+    <Content Include="Images\Banner Student.png" />
+    <Content Include="Images\controlPanelTeachr.jpg" />
+    <Content Include="login.aspx" />
+    <Content Include="show_answer.aspx" />
+    <Content Include="show_exam.aspx" />
+    <Content Include="student_student.aspx" />
+    <Content Include="TeachrMain.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Admin.aspx.cs">
+      <DependentUpon>Add_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Admin.aspx.designer.cs">
+      <DependentUpon>Add_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add_Exam.aspx.cs">
+      <DependentUpon>add_Exam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_Exam.aspx.designer.cs">
+      <DependentUpon>add_Exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add_question.aspx.cs">
+      <DependentUpon>add_question.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_question.aspx.designer.cs">
+      <DependentUpon>add_question.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add_student.aspx.cs">
+      <DependentUpon>add_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_student.aspx.designer.cs">
+      <DependentUpon>add_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add_Subject.aspx.cs">
+      <DependentUpon>add_Subject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_Subject.aspx.designer.cs">
+      <DependentUpon>add_Subject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Teacher.aspx.cs">
+      <DependentUpon>Add_Teacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Teacher.aspx.designer.cs">
+      <DependentUpon>Add_Teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_admin.aspx.cs">
+      <DependentUpon>admin_admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_admin.aspx.designer.cs">
+      <DependentUpon>admin_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit_student.aspx.cs">
+      <DependentUpon>edit_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit_student.aspx.designer.cs">
+      <DependentUpon>edit_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit_Tech.aspx.cs">
+      <DependentUpon>edit_Tech.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit_Tech.aspx.designer.cs">
+      <DependentUpon>edit_Tech.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterAdmin.Master.cs">
+      <DependentUpon>MasterAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterAdmin.Master.designer.cs">
+      <DependentUpon>MasterAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPageHome.Master.cs">
+      <DependentUpon>MasterPageHome.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageHome.Master.designer.cs">
+      <DependentUpon>MasterPageHome.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterStudent.Master.cs">
+      <DependentUpon>MasterStudent.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterStudent.Master.designer.cs">
+      <DependentUpon>MasterStudent.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterTeach.Master.cs">
+      <DependentUpon>MasterTeach.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterTeach.Master.designer.cs">
+      <DependentUpon>MasterTeach.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="show_answer.aspx.cs">
+      <DependentUpon>show_answer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="show_answer.aspx.designer.cs">
+      <DependentUpon>show_answer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="show_exam.aspx.cs">
+      <DependentUpon>show_exam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="show_exam.aspx.designer.cs">
+      <DependentUpon>show_exam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student_student.aspx.cs">
+      <DependentUpon>student_student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="student_student.aspx.designer.cs">
+      <DependentUpon>student_student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeachrMain.aspx.cs">
+      <DependentUpon>TeachrMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeachrMain.aspx.designer.cs">
+      <DependentUpon>TeachrMain.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterPageHome.Master" />
+    <Content Include="assets\images\hashes.json" />
+    <Content Include="assets\socicon\fonts\socicon.eot" />
+    <Content Include="assets\socicon\fonts\socicon.ttf" />
+    <Content Include="assets\socicon\fonts\socicon.woff" />
+    <Content Include="assets\socicon\fonts\socicon.woff2" />
+    <Content Include="assets\web\assets\mobirise-icons-bold\mobirise-icons-bold.eot" />
+    <Content Include="assets\web\assets\mobirise-icons-bold\mobirise-icons-bold.ttf" />
+    <Content Include="assets\web\assets\mobirise-icons-bold\mobirise-icons-bold.woff" />
+    <Content Include="assets\web\assets\mobirise-icons2\mobirise2.eot" />
+    <Content Include="assets\web\assets\mobirise-icons2\mobirise2.ttf" />
+    <Content Include="assets\web\assets\mobirise-icons2\mobirise2.woff" />
+    <Content Include="assets\web\assets\mobirise-icons\mobirise-icons.eot" />
+    <Content Include="assets\web\assets\mobirise-icons\mobirise-icons.ttf" />
+    <Content Include="assets\web\assets\mobirise-icons\mobirise-icons.woff" />
+    <Content Include="MasterAdmin.Master" />
+    <Content Include="MasterTeach.Master" />
+    <Content Include="MasterStudent.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58306</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44324/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
